@@ -11,6 +11,8 @@ Este proyecto se enfoca en la creación y aplicación de una Organización Autó
 - [Instalación](#instalación)
 - [Arquitectura física y lógica](#arquitectura-física-y-lógica)
 - [Estructura de directorios](#estructura-de-directorios)
+- [Interconexión de los contratos](#estructura-de-contratos)
+- [Resumen](#resumen)
 - [Contacto](#contacto)
 
 
@@ -36,7 +38,7 @@ Los siguientes requisitos previos son necesarios para ejecutar el proyecto:
 
 - **HDWalletProvider:** Este paquete es necesario para poder ejecutar los scripts con Truffle.
 
-- **IPFS Companion:** Hay que tener habilitada la extensión para permitir una velocidad superior a la hora de la visualización de los NFT-
+- **IPFS Companion:** Hay que tener habilitada la extensión para permitir una velocidad superior a la hora de la visualización de los NFT.
 
 ## Instalación
 
