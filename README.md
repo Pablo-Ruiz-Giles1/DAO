@@ -42,7 +42,7 @@ Los siguientes requisitos previos son necesarios para ejecutar el proyecto:
 
 ## Instalación
 
-Para la instalación de este estudio, únicamente será necesario seguir los siguientes pasos.
+Para la instalación de este prototipo, únicamente será necesario seguir los siguientes pasos.
 
 1. Clona el repositorio en tu máquina local:
 ```
