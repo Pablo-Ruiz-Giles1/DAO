@@ -20,7 +20,7 @@ Para ejecutar el código de la plantilla en el navegador:
 npm start
 ```
 
-##Personalización del Proyecto
+## Personalización del Proyecto
 
 Se realizó una modificación en uno de los scripts para visualizar los tokens de una DAO personalizada. Abre el archivo index.js y reemplaza la línea de conexión con 'MetaColony' con la siguiente línea:
 ```
