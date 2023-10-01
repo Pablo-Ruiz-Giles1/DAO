@@ -58,6 +58,18 @@ Una vez dentro de la carpeta raíz, deberemos acceder a cada subcarpeta y ejecut
 ```
 npm install
 ```
+Una vez instalado todos los paquetes, habrá qu instalar las siguientes extensiones en el navegador web
+```
+- Metamask
+- IPFS Companion
+```
+
+Tras realazrlo, si se quiere arrancar la alpicación, habrá que irse a la carpeta de **IPFS** y ejecutar los siguientes comandos:
+```
+sudo sysctl -w net.core.rmem_max=2500000
+
+npx ipfs daemon
+```
 Tras realizarlo, podrá ejecutar la Dapp, navegando a la carpeta dapp y ejecutando el comando:
 ```
 npm start
