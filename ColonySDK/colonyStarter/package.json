@@ -1,0 +1,25 @@
+{
+  "name": "colony-starter",
+  "version": "1.0.0",
+  "description": "A template to get started with Colony quickly",
+  "main": "dist/index.ts",
+  "scripts": {
+    "start": "esbuild --bundle --outdir=www --servedir=www src/index.js",
+    "build": "esbuild --bundle src/index.js --minify --outfile=dist/index.js && cpy --flat www/index.html dist"
+  },
+  "keywords": [
+    "colony",
+    "blockchain",
+    "web3"
+  ],
+  "author": "Christian Maniewski <chris@colony.io>",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "cpy-cli": "^4.1.0",
+    "esbuild": "^0.17.8"
+  },
+  "dependencies": {
+    "@colony/sdk": "^2.0.0-next.6",
+    "ethers": "^5.7.2"
+  }
+}

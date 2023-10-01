@@ -38,8 +38,3 @@ Este repositorio contiene el código fuente de seis contratos inteligentes desar
 - Implementa un controlador de Timelock basado en 'TimelockController' de OpenZeppelin.
 - Programa transacciones para ejecutarse después de un tiempo.
 - Define quiénes pueden proponer y ejecutar transacciones.
-
-
-## Configuración de truffle-config.js para Contratos Inteligentes Extensos
-
-Para compilar estos contratos inteligentes extensos, debes modificar el archivo 'truffle-config.js' como se indica en la sección de configuración en este README. Esto es necesario para superar las restricciones de tamaño en Ethereum y permitir el despliegue de contratos más grandes en la red.
