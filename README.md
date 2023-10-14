@@ -58,7 +58,7 @@ Una vez dentro de la carpeta raíz, deberemos acceder a cada subcarpeta y ejecut
 ```
 npm install
 ```
-Una vez instalado todos los paquetes, habrá qu instalar las siguientes extensiones en el navegador web
+Una vez instalado todos los paquetes, habrá que instalar las siguientes extensiones en el navegador web
 ```
 - Metamask
 - IPFS Companion
