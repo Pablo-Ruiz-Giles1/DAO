@@ -52,8 +52,11 @@ const Oneipfs = ({ nftsid , address}) => {
                 </tr>
               </tbody>
             </table>
+            
+         
           </>
         );
+        
       case "1":
         return (
           <>
@@ -80,6 +83,10 @@ const Oneipfs = ({ nftsid , address}) => {
                   <th>Precio</th>
                   <td>{data.price}</td>
                 </tr>
+              
+                <tr>
+                </tr>
+                
               </tbody>
             </table>
           </>
@@ -109,8 +116,11 @@ const Oneipfs = ({ nftsid , address}) => {
                   <th>Precio</th>
                   <td>{data.price}</td>
                 </tr>
+                <tr>
+                </tr>
               </tbody>
             </table>
+            
           </>
         );
       default:
@@ -119,19 +129,43 @@ const Oneipfs = ({ nftsid , address}) => {
   };
 
   return (
-    
     <>
-      {renderContent()
-      }
-      {addr !== address && (
-        <button key="submit" className="pure-button" type="button"
-        onClick={ev => {
-            ev.preventDefault();
 
-            const stackId = drizzle.contracts.NFTContract.methods.exchangeNFTOther.cacheSend(Number(nftsid), addr);
-         //   setLastStackID(stackId);
-        }}>Comprar</button>
-      )}
+   
+{renderContent()}
+      {/* Mostrar el botón en una nueva fila de la tabla si se cumple la condición */}
+      {addr !== address && (
+        <>
+        <table>
+          <tbody>
+            <tr>
+              <th>Comprar</th>
+              <td>
+                <button
+                  key="submit"
+                  className="pure-button"
+                  type="button"
+                  onClick={(ev) => {
+                    ev.preventDefault();
+  
+                    const stackId = drizzle.contracts.NFTContract.methods.exchangeNFTOther.cacheSend(
+                      Number(nftsid),
+                      addr
+                    );
+                    //   setLastStackID(stackId);
+                  }}
+                >
+                  Comprar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+         <div style={{ marginBottom: "20px" }}></div>
+        </>
+      )
+      }
+         
     </>
   );
 };

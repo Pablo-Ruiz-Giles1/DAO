@@ -162,7 +162,6 @@ const handleSubmit = (event) => {
         fileType
       );
       setHash("");
-     // setLastStackID(stackId);
     } catch (error) {
       console.error("Error uploading to IPFS:", error);
     }
